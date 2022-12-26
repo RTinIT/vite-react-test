@@ -1,0 +1,10 @@
+.btn.active {
+  border-color: #646cff;
+  color: transparent;
+  text-shadow: 2px 0px 4px rgb(156 44 248), 0 0 0px rgb(156 44 248), -2px 0px 4px rgb(156 44 248);
+}
+
+.btn {
+  padding: 0.6em 1.2em;
+}
+

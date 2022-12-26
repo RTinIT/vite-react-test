@@ -1,0 +1,94 @@
+.home {
+  min-height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
+
+.home-btn {
+  padding: 0;
+  margin: 0;
+  background: var(--shadow-color);
+}
+
+.home-btn a {
+  padding: 0.5em 2em;
+  font-size: 0.8em;
+  color: var(--font-color2);
+}
+
+.home-btn a:hover {
+  color: var(--font-color2);
+}
+
+.home-text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  width: 500px;
+  height: 370px;
+  font-size: 1.5em;
+  background: var(--bg-color-light);
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 40%;
+  border-top-right-radius: 70%;
+  border-top-left-radius: 40%;
+  box-shadow: -8px 0px 36px var(--bg-color-light), 0px 29px 25px var(--bg-color) inset, 2px -35px 25px var(--bg-color) inset;
+ 
+  transition: 2s;
+  position: relative;
+  animation: animate-radius 8s infinite alternate;
+}
+
+@keyframes animate-radius {
+  0% {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 40%;
+  }
+ 
+  25% {
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 40%;
+
+  }
+  50% {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+
+  }
+  75% {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+
+  }
+
+  100% {
+    border-top-left-radius: 70%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 70%;
+
+  }
+}
+
+.home-btn:hover {
+  box-shadow: 4px 0px 20px var(--shadow-color), -4px 0px 20px var(--bg-color-light), 0px 29px 25px var(--bg-color) inset, 2px -35px 25px var(--bg-color) inset;
+  transition: .7s;
+
+}
+
+.home-text-section h2,
+.home-text-section h3 {
+  margin: 0;
+}

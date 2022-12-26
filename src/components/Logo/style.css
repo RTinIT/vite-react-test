@@ -1,0 +1,30 @@
+.logo-wrapper {
+  margin: 0;
+}
+
+.logo img {
+  padding: 0 1em;
+}
+
+.logo img:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.logo-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 2em;
+  color: var(--font-color);
+  margin: 0;
+}

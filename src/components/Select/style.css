@@ -1,0 +1,16 @@
+.select-wrapper {
+  display: flex;
+  align-self: flex-start;
+}
+
+select {
+  border-radius: 8px;
+  border: 0;
+  padding: 0.6em 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--bg-color-light);
+  color: var(--font-color);
+  outline: none;
+}

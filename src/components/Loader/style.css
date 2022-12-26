@@ -1,0 +1,113 @@
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12em;
+  height: 12em;
+  position: relative;
+  color: var(--font-color2);
+  transition: 4s;
+
+}
+
+.loader:hover {
+
+}
+
+.circle {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  border: 0px solid;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.loader-text {
+  color: transparent;
+  font-size: large;
+  padding: 0 2px 0 2px;
+  position: absolute;
+  margin: auto;
+  z-index: 3;
+  background: linear-gradient(45deg, blueviolet, yellow, red, blueviolet);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  /* -webkit-text-stroke: 5px transparent; */
+  animation: animate-text 20s linear infinite alternate;
+}
+
+@keyframes animate-text {
+  0% {
+    background-position: 0%;
+  }
+  50%{
+    background-position: 400%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.circle:nth-child(1) {
+  border-bottom-width: 8px;
+  /* border-color: #85a2b6; */
+  animation: spin1 3s linear infinite;
+}
+.circle:nth-child(2) {
+  border-right-width: 8px;
+  /* border-color: #055c9e; */
+  animation: spin2 3s linear infinite;
+}
+.circle:nth-child(3) {
+  border-left-width: 8px;
+  /* border-color: #240227; */
+  animation: spin3 3s linear infinite;
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes spin1-slow {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes spin3 {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+

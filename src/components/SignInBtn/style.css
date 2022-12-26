@@ -1,0 +1,25 @@
+.signin-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 2.5em;
+}
+
+.signin-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 6em;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+  border-radius: 18px;
+  background: var(--bg-glass);
+  color: var(--font-color);
+}
+
+.signin-btn-active {
+  box-shadow: 0px 2px 15px 0px hsl(285deg 90% 55% / 25%), 0px -2px 15px 0px hsl(285deg 90% 55% / 25%), 0px 0px 27px 15px hsl(285deg 90% 55% / 25%);
+
+}

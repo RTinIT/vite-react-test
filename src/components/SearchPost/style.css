@@ -1,0 +1,12 @@
+.search-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.search-input {
+  place-self: flex-start;
+  width: 90%;
+}
+

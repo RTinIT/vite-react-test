@@ -1,0 +1,34 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+  background: hsl(285deg 90% 12% / 11%);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-active {
+  display: block;
+  animation: show-modal .3s ease;
+}
+
+@keyframes show-modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

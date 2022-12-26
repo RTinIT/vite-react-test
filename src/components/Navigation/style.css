@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2em;
+  font-size: 1.2em;
+  height: 30px;
+}
+
+.menu-item {
+  color: var(--font-color);
+
+}
+
+.active-page {
+  color: var(--font-color2);
+}
+

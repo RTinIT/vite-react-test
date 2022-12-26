@@ -1,0 +1,81 @@
+.post {
+  width: 55%;
+  border-radius: 8px;
+  background-color: hsl(285deg 90% 5% / 12%);
+  padding: 20px;
+  box-shadow: 0px 2px 4px 0px hsl(285deg 90% 55% / 25%), 0px -2px 4px 0px rgb(4 4 4 / 20%), 0px 0px 4px 0px rgb(4 4 4 / 20%);
+}
+
+.post-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.post-heading h2 {
+  margin: 0;
+}
+.post-title {
+  width: 80%;
+}
+
+.post-content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-enter {
+  transform: translateX(-350px);
+}
+.post-enter-active {
+  transform: translateX(0);
+  transition: all 500ms ease-out;
+}
+.post-exit {
+  opacity: 1;
+}
+.removed-post {
+  transform: translateX(-350px);
+  transition: all 500ms ease-in;
+  opacity: 0;
+}
+
+.post-btn {
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background: transparent;
+}
+
+.post-btn > .btn-icons {
+ padding: 5px;
+}
+
+.btn-icons {
+  color: var(--bg-color-light);
+}
+
+.btn-icons:hover {
+  color: var(--font-color);
+  transition: .3s;
+}
+
+.btns-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+@media (width <= 768px ) {
+  .post {
+    width: 80%;
+  }
+}
+@media (width <= 1220px ) {
+  .post {
+    width: 70%;
+  }
+}
+
