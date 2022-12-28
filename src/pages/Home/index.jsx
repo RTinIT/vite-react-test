@@ -11,7 +11,7 @@ const Home = () => {
         <h3>Welcome to </h3>
         <h2>The Post Viewer's home page</h2>
         <Button className={"home-btn"}>
-          <NavLink to="content">See more</NavLink>
+          <NavLink to="/vite-react-test/content">See more</NavLink>
         </Button>
       </div>
       <div>
