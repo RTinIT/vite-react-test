@@ -7,7 +7,7 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="nav-item">
         <NavLink
-          to="/"
+          to="/vite-react-test/home"
           className={({ isActive }) => (isActive ? "active-page" : "menu-item")}
         >
           Home
@@ -15,7 +15,7 @@ const Navigation = () => {
       </div>
       <div className="nav-item">
         <NavLink
-          to="about"
+          to="/vite-react-test/about"
           className={({ isActive }) => (isActive ? "active-page" : "menu-item")}
         >
           About
@@ -23,7 +23,7 @@ const Navigation = () => {
       </div>
       <div className="nav-item">
         <NavLink
-          to="content"
+          to="/vite-react-test/content"
           className={({ isActive }) => (isActive ? "active-page" : "menu-item")}
         >
           Content

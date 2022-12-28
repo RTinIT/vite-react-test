@@ -15,7 +15,7 @@ const SignInBtn = () => {
     console.log("Log out ...");
     await signOut(auth);
     localStorage.removeItem("isAuth");
-    navigate("/sign-in");
+    navigate("/vite-react-test/sign-in");
   };
 
   return (
@@ -27,7 +27,7 @@ const SignInBtn = () => {
         </button>
       ) : (
         <NavLink
-          to={"/sign-in"}
+          to={"/vite-react-test/sign-in"}
           className={({ isActive }) =>
             isActive ? "signin-btn signin-btn-active" : "signin-btn"
           }

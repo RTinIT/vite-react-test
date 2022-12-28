@@ -64,7 +64,7 @@ const Content = () => {
 
   const openModal = () => {
     if (!localStorage.getItem("isAuth")) {
-      navigate("/sign-in");
+      navigate("/vite-react-test/sign-in");
     }
     setModalVisible(!modalVisible);
   };

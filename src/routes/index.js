@@ -6,12 +6,12 @@ import SignIn from "../pages/Auth/SignIn";
 import SignUp from "../pages/Auth/SignUp";
 
 const routes = [
-  { path: "/", element: Home },
-  { path: "/about", element: About, exact: true },
-  { path: "/content", element: Content, exact: true },
-  { path: "/content/:id", element: PostIdPage, exact: true },
-  { path: "/sign-in", element: SignIn, exact: true },
-  { path: "/sign-up", element: SignUp, exact: true },
+  { path: "/vite-react-test/home", element: Home },
+  { path: "/vite-react-test/about", element: About, exact: true },
+  { path: "/vite-react-test/content", element: Content, exact: true },
+  { path: "/vite-react-test/content/:id", element: PostIdPage, exact: true },
+  { path: "/vite-react-test/sign-in", element: SignIn, exact: true },
+  { path: "/vite-react-test/sign-up", element: SignUp, exact: true },
 ];
 
 export default routes;
