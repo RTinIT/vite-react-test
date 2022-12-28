@@ -32,7 +32,7 @@ const SignIn = () => {
       title="Identification"
       question="Don't have an account?"
       btnText="Sign In"
-      switchToPage={"/sign-up"}
+      switchToPage={"/vite-react-test/sign-up"}
       handleSubmit={handleSignIn}
       errorCode={errorCode}
     ></Form>

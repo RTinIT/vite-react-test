@@ -16,7 +16,7 @@ const AppRouter = () => {
           />
         );
       })}
-      {/* <Route path="*" element={<Home to="/" replace />} /> */}
+      <Route path="*" element={<Home to="/vite-react-test/home" replace />} />
     </Routes>
   );
 };

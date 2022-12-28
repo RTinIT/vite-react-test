@@ -21,8 +21,8 @@ const PostItem = ({ post, deletePost }) => {
             className={"post-btn"}
             onClick={() =>
               localStorage.getItem("isAuth")
-                ? navigate("/content/" + post.id)
-                : navigate("/sign-in")
+                ? navigate("/vite-react-test/content/" + post.id)
+                : navigate("/vite-react-test/sign-in")
             }
           >
             <FontAwesomeIcon icon={faComment} className="btn-icons" />
@@ -32,7 +32,7 @@ const PostItem = ({ post, deletePost }) => {
             onClick={() =>
               localStorage.getItem("isAuth")
                 ? deletePost(post)
-                : navigate("/sign-in")
+                : navigate("/vite-react-test/sign-in")
             }
           >
             <FontAwesomeIcon icon={faClose} className="btn-icons" />

@@ -1,6 +1,7 @@
 import React from "react";
 import reactLogo from "../../assets/react.svg";
 import firebaseLogo from "../../assets/firebase-icon.svg";
+import viteLogo from "../../assets/vite.svg";
 import "./style.css";
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
       <div className="technologies">
         <div className="technology-item">
           <a href="https://vitejs.dev" target="_blank">
-            <img src="/vite.svg" className="technology-logo" alt="Vite logo" />
+            <img src={viteLogo} className="technology-logo" alt="Vite logo" />
           </a>
         </div>
         <div className="technology-item">

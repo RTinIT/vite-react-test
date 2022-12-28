@@ -38,7 +38,7 @@ const SignUp = () => {
       title="Registration"
       question="Already have an account?"
       btnText="Sign Up"
-      switchToPage={"/sign-in"}
+      switchToPage={"/vite-react-test/sign-in"}
       handleSubmit={handleSignUp}
       errorCode={errorCode}
     ></Form>
