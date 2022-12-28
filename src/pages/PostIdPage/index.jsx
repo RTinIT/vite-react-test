@@ -28,23 +28,15 @@ const PostIdPage = () => {
 
   return (
     <div className="container">
-      {isLoading ? (
-        <PreLoader limit={1} addClass={"comments-page"} />
-      ) : (
-        <div className="post-wrapper">
-          <h2>Comments by post:</h2>
-          <article className="post">
-            <h2>
-              {post.id}. {capitalizeFirstLetter(post.title)}
-            </h2>
-            <p>{post.body}</p>
-          </article>
-        </div>
-      )}
-
+      <div className="post-list">
+        <h2>Comments by post:</h2>
+        <h2 style={{ color: "var(--font-color)" }}>
+          {capitalizeFirstLetter(post.title)}
+        </h2>
+      </div>
       <div className="comments-wrapper">
         {isLoading ? (
-          <PreLoader limit={6} addClass={"post-list"} />
+          <PreLoader limit={6} rowsCount={3} addClass={"comments-wrapper"} />
         ) : (
           <div className="comments">
             {comments.map((c, i) => (

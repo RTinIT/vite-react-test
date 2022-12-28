@@ -2,7 +2,7 @@ import React from "react";
 import SkeletonItem from "../SkeletonItem";
 import "./style.css";
 
-const PreLoader = ({ limit, addClass = "", addInscription }) => {
+const PreLoader = ({ limit, addClass = "", addInscription, rowsCount }) => {
   const generateItems = (count) => {
     const items = [];
     for (let i = 0; i < count; i++) {
@@ -16,7 +16,7 @@ const PreLoader = ({ limit, addClass = "", addInscription }) => {
     <div className={"preloader " + addClass}>
       {addInscription ? <h2>Loading ...</h2> : ""}
       {items.map((it) => (
-        <SkeletonItem key={it} />
+        <SkeletonItem rowsCount={rowsCount} key={it} />
       ))}
     </div>
   );

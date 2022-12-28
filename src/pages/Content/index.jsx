@@ -103,7 +103,12 @@ const Content = () => {
 
       {error ? <h2>{error}</h2> : ""}
       {isLoading ? (
-        <PreLoader limit={limit} addClass={"post-list"} addInscription={true} />
+        <PreLoader
+          limit={limit}
+          rowsCount={3}
+          addClass={"post-list"}
+          addInscription={true}
+        />
       ) : (
         <PostList
           posts={sortAndSearchedPosts}
